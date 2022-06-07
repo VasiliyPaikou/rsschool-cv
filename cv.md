@@ -19,7 +19,6 @@ Hello! My name is Vasily and I want to become a front-end developer. I have been
 * Editors:VSCode
 
 ## Code examples
-
 ```javascript
 function unluckyDays(year){
   let sumDay = 0;
@@ -33,6 +32,15 @@ function unluckyDays(year){
 }
 ```
 
-Опыт работы. Junior Dev может перечислить учебные проекты с указанием использованных навыков и ссылками на исходный код.
-Образование (включая пройденные курсы и тренинги)
-Английский язык (уровень английского языка, если была языковая практика, расскажите о ней)
+## Education
+Belarusian-Russian University
+
+Specialty: engineer
+
+## Experience
+Courses RSSchool:
+* Stage0: JS/FE Pre-School 2022
+* Stage1: JavaScript/Front-end 2022Q1
+## Languages
+English(A1)
+
