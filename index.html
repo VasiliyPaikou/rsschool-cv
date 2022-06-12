@@ -22,20 +22,27 @@
 						<li class="nav-list__item"><a href="#code" class="nav-list__link">Code</a></li>
 						<li class="nav-list__item"><a href="#projects" class="nav-list__link">Projects</a></li>
 						<li class="nav-list__item"><a href="#education" class="nav-list__link">Education</a></li>
-						<li class="nav-list__item"><a href="#english" class="nav-list__link">English</a></li>
+						<li class="nav-list__item"><a href="#english" class="nav-list__link">Language</a></li>
 					</ul>
 				</nav>
 			</div>
 		</header>
 		<main class="main">
 			<div class="container main-container">
-				<section class="main-section profile-section" id="contacts">
+				<section class="main-section profile-section">
 					<img src="assets/images/rss-avatar.jpeg" alt="rss-avatar" class="rss-avatar">
 					<h1 class="section-title">VasiliyPaikou</h1>
 				</section>
 				<section class="main-section" id="contacts">
-
 					<h2 class="section-title">Contacts</h2>
+
+					<ul>
+						<li class="lang-item location">Location: Belarus, Mogilev</li>
+						<li class="lang-item discord">Discord: VasiliyPaikou(vasiliy)</li>
+						<li class="lang-item viber">Viber: +375298354579</li>
+						<li class="lang-item telegram">Telegram: +375298354579</li>
+						<li class="lang-item github">Github: <a href="https://github.com/VasiliyPaikou"  class="git-link" target="_blank">VasiliyPaikou</a></li>
+					</ul>
 				</section>
 				<section class="main-section" id="summary">
 					<h2 class="section-title">Summary</h2>
@@ -51,31 +58,26 @@
 				</section>
 				<section class="main-section" id="skills">
 					<h2 class="section-title">Skills</h2>
-<ul>
-	<li>HTML</li>
-	<li>CSS</li>
-	<li>JavaScript</li>
-	<li>Grid</li>
-	<li>Flex</li>
-	<li>Figma</li>
-	<li></li>
-</ul>
+					<ul>
+						<li class="lang-item">HTML</li>
+						<li class="lang-item">CSS</li>
+						<li class="lang-item">JavaScript</li>
+						<li class="lang-item">Grid</li>
+						<li class="lang-item">Flex</li>
+						<li class="lang-item">Figma</li>
+						<li class="lang-item"></li>
+					</ul>
 				</section>
 				<section class="main-section" id="code">
 					<h2 class="section-title">Code</h2>
-<pre class="pre">
-<code class="code">
-	function unluckyDays(year){
-		let sumDay = 0;
-		for (let i = 0; i < 12; i++) {
-		  const fridayThirteen = new Date(year, i, 13)
-		  if (fridayThirteen.getDay() === 5) {
-			 sumDay += 1;
-		  } else continue;
+					<pre class="pre">
+	function nthFibo(n) {
+		let stack = [0,1] 
+		while (stack.length < n) {
+		  stack.push(stack[stack.length - 2] + stack[stack.length - 1])
 		}
-		return sumDay
-	 }
-</code>
+		return stack[n - 1]
+		}
 </pre>
 				</section>
 				<section class="main-section project-section" id="projects">
@@ -117,10 +119,10 @@
 					<p class="p-text">Belarusian-Russian University, engineer</p>
 				</section>
 				<section class="main-section" id="english">
-					<h2 class="section-title">English</h2>
+					<h2 class="section-title">Language</h2>
 					<ul class="lang">
 						<li class="lang-item">English(A1)</li>
-						<li class="lang-item">Duolingo(English)</li>
+						<li class="lang-item">Belarusian</li>
 
 					</ul>
 				</section>

@@ -9,13 +9,17 @@
 	font-weight: 500;
  }
 
+ html {
+	scroll-behavior: smooth; 
+ }
+ 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Alegreya';
 	font-size: 20px;
-	font-weight: 500;
+	font-weight: 400;
 }
 
 .wrapper{
@@ -35,7 +39,6 @@ min-height: 100vh;
   margin: 0 auto;
   padding: 0 20px;
   max-width: 1440px;
-  border: 1px solid red;
   min-height: 80px;
 }
 
@@ -69,10 +72,17 @@ margin: 0 10px;
 	justify-content: space-between;
 }
 
+.section-title{
+	font-size: 32px;
+	font-weight: 500;
+}
+
 .main-section{
 width:calc(50% - 10px);
 margin:10px 0;
-border:1px solid #1b2326;
+border:2px solid #1b2326;
+padding: 10px;
+background-color: #b4eddf;
 }
 
 .project-section,
@@ -88,6 +98,12 @@ width: 100%;
 	position: relative;
 }
 
+.profile-section{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
 .slider {
 	min-height:50vh;
 	overflow: hidden;
@@ -100,6 +116,7 @@ width: 100%;
 .slides {
 	position: absolute;
 	width: 100%;
+	border: 3px solid #000000;
 }
 
 img{
@@ -197,9 +214,30 @@ label:hover .lbd{
 border-radius: 50%;
 }
 
-.p-text{
-
+.lang-item{
+  list-style-position: inside;
+  list-style-image: url(assets/icons/mark.ico);
 }
+
+.location{
+	list-style-image: url(assets/icons/location.ico);
+ }
+ 
+ .discord{
+	list-style-image: url(assets/icons/discord.ico);
+ }
+ 
+ .viber{
+	list-style-image: url(assets/icons/viber.ico);
+ }
+ 
+ .telegram{
+	list-style-image: url(assets/icons/telegram.ico);
+ }
+
+ .github{
+	list-style-image: url(assets/icons/github.ico);
+ }
 
 .footer-wrapper{
   display: flex;
@@ -220,4 +258,9 @@ border-radius: 50%;
 	font-size: 24px;
 	font-weight: 400;
 	color: #FFFFFF;
+}
+
+ .git-link{
+	text-decoration: none;
+	color: #000000;
 }
