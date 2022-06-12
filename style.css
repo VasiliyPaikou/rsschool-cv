@@ -12,7 +12,7 @@
  html {
 	scroll-behavior: smooth; 
  }
- 
+
 * {
 	margin: 0;
 	padding: 0;
@@ -33,6 +33,14 @@ min-height: 100vh;
 .header-container,
 .footer-container{
 	background-color: #1b2326;
+}
+
+.header-container{
+	margin-bottom: 10px;
+}
+
+.footer-container{
+	margin-top: 10px;
 }
 
 .container{
@@ -61,9 +69,9 @@ margin: 0 10px;
 	font-weight: 400;
 	color: #FFFFFF;
 }
-.nav-list__link:hover{
-	color: yellow;
-	font-size: 28px;
+.nav-list__link:hover,
+.footer-container__github:hover{
+	color: #b4eddf;
 }
 /* --------------------main--------------------- */
 .main-container{
@@ -83,17 +91,39 @@ margin:10px 0;
 border:2px solid #1b2326;
 padding: 10px;
 background-color: #b4eddf;
+transition: 0.5s;
 }
+
+.main-section:hover{
+	box-shadow: 0px 2px 35px 14px rgb(13 13 13 / 50%);
+	}
 
 .project-section,
 .profile-section{
 width: 100%;
 }
+.project-section>.section-title{
+width: fit-content;
+margin: 0 auto;
+}
+
+.profile-title{
+	font-size: 36px;
+	border-bottom: 2px solid #000000;
+}
+
+.subtitle{
+font-weight: 500;
+font-size: 24px;}
+
+.title{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 /* slider */
 
 .project-section {
-	margin:  0 auto;
-	margin-top: 2vh;
 	padding: 0 2%;
 	position: relative;
 }
@@ -116,7 +146,6 @@ width: 100%;
 .slides {
 	position: absolute;
 	width: 100%;
-	border: 3px solid #000000;
 }
 
 img{
@@ -173,7 +202,7 @@ label {
 
 
 label:hover .lbd{
-	background-color: yellow;
+	background-color: #FFFFFF;
 	border: 0.3vh solid black;
 }
 
@@ -245,15 +274,21 @@ border-radius: 50%;
   align-items: center;
 }
 
-.footer-container__logo {
+.footer-container__logo{
 	width: 121px;
 	height: 45px;
 	background-image: url("assets/icons/rss.svg");
 	background-size: contain;
 	background-repeat: no-repeat;
+	transition: 0.3s;
  }
 
- .footer-link{
+ .footer-container__logo:hover {
+	filter: invert(6%) sepia(13%) saturate(636%) hue-rotate(99deg) brightness(99%) contrast(87%);
+ }
+
+ .footer-link,
+ .footer-container__paragraph{
 	text-decoration: none;
 	font-size: 24px;
 	font-weight: 400;

@@ -31,7 +31,10 @@
 			<div class="container main-container">
 				<section class="main-section profile-section">
 					<img src="assets/images/rss-avatar.jpeg" alt="rss-avatar" class="rss-avatar">
-					<h1 class="section-title">VasiliyPaikou</h1>
+					<div class="title">
+						<h1 class="section-title profile-title">VasiliyPaikou</h1>
+						<h3 class="subtitle">Student RSSchool</h3>
+					</div>
 				</section>
 				<section class="main-section" id="contacts">
 					<h2 class="section-title">Contacts</h2>
@@ -41,7 +44,8 @@
 						<li class="lang-item discord">Discord: VasiliyPaikou(vasiliy)</li>
 						<li class="lang-item viber">Viber: +375298354579</li>
 						<li class="lang-item telegram">Telegram: +375298354579</li>
-						<li class="lang-item github">Github: <a href="https://github.com/VasiliyPaikou"  class="git-link" target="_blank">VasiliyPaikou</a></li>
+						<li class="lang-item github">Github: <a href="https://github.com/VasiliyPaikou" class="git-link"
+								target="_blank">VasiliyPaikou</a></li>
 					</ul>
 				</section>
 				<section class="main-section" id="summary">
@@ -65,7 +69,6 @@
 						<li class="lang-item">Grid</li>
 						<li class="lang-item">Flex</li>
 						<li class="lang-item">Figma</li>
-						<li class="lang-item"></li>
 					</ul>
 				</section>
 				<section class="main-section" id="code">
@@ -73,7 +76,7 @@
 					<pre class="pre">
 	function nthFibo(n) {
 		let stack = [0,1] 
-		while (stack.length < n) {
+		while (stack.length  n) {
 		  stack.push(stack[stack.length - 2] + stack[stack.length - 1])
 		}
 		return stack[n - 1]
@@ -100,16 +103,16 @@
 
 						<div class="controls">
 							<label for="slide1" class="lbl">
-								<div class="lbd lbd1"></div>
+								<span class="lbd lbd1"></span>
 							</label>
 							<label for="slide2" class="lbl">
-								<div class="lbd lbd2"></div>
+								<span class="lbd lbd2"></span>
 							</label>
 							<label for="slide3" class="lbl">
-								<div class="lbd lbd3"></div>
+								<span class="lbd lbd3"></span>
 							</label>
 							<label for="slide4" class="lbl">
-								<div class="lbd lbd4"></div>
+								<span class="lbd lbd4"></span>
 							</label>
 						</div>
 					</div>
@@ -130,11 +133,9 @@
 		</main>
 		<footer class="footer-container">
 			<div class="container footer-wrapper">
-				<div class="footer-link">
-					© 2022
-					<a href="https://github.com/VasiliyPaikou" target="_blank"
-						class="footer-container__github">VasiliyPaikou</a>
-				</div>
+				<p class="footer-container__paragraph"> © 2022</p>
+				<a href="https://github.com/VasiliyPaikou" target="_blank"
+					class="footer-container__github">VasiliyPaikou</a>
 				<a href="https://rs.school/js/" target="_blank" class="footer-container__logo"></a>
 			</div>
 		</footer>
