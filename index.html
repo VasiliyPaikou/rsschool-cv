@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VasiliyPaikou</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="/assets/icons/rs.ico" type="image/x-icon">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header-container">
+      <div class="container">
+        <nav class="navigation">
+          <ul class="nav-list">
+            <li class="nav-list__item"><a href="#contacts" class="nav-list__link">Contacts</a></li>
+            <li class="nav-list__item"><a href="#summary" class="nav-list__link">Summary</a></li>
+            <li class="nav-list__item"><a href="#skills" class="nav-list__link">Skills</a></li>
+            <li class="nav-list__item"><a href="#code" class="nav-list__link">Code</a></li>
+            <li class="nav-list__item"><a href="#projects" class="nav-list__link">Projects</a></li>
+            <li class="nav-list__item"><a href="#education" class="nav-list__link">Education</a></li>
+            <li class="nav-list__item"><a href="#english" class="nav-list__link">Language</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container main-container">
+        <section class="main-section profile-section">
+          <img src="assets/images/rss-avatar.jpeg" alt="rss-avatar" class="rss-avatar">
+          <div class="title">
+            <h1 class="section-title profile-title">VasiliyPaikou</h1>
+            <h3 class="subtitle">Student RSSchool</h3>
+          </div>
+        </section>
+        <section class="main-section" id="contacts">
+          <h2 class="section-title">Contacts</h2>
+          <ul>
+            <li class="lang-item location">Location: Belarus, Mogilev</li>
+            <li class="lang-item discord">Discord: VasiliyPaikou(vasiliy)</li>
+            <li class="lang-item viber">Viber: +375298354579</li>
+            <li class="lang-item telegram">Telegram: +375298354579</li>
+            <li class="lang-item github">Github: <a href="https://github.com/VasiliyPaikou" class="git-link"
+                target="_blank">VasiliyPaikou</a></li>
+          </ul>
+        </section>
+        <section class="main-section" id="summary">
+          <h2 class="section-title">Summary</h2>
+          <p class="p-text">
+            Hello! My name is Vasily and I want to become a front-end developer. I have a higher education and a
+            degree in engineering. I work at a steel structure factory and as a quality engineer. And one fine
+            moment I realized that my work does not bring me pleasure. I learned about RSSchool from my colleague.
+            I have been studying at RSSchool for six months now. I passed stage 0 and stage 1. It was fun. I
+            recently had a son and I won't have free time in stage 2. So I decided to take the preparatory course
+            again.I do this in order to consolidate previously acquired knowledge. And do a couple of new projects
+            for
+            my future portfolio.</p>
+        </section>
+        <section class="main-section" id="skills">
+          <h2 class="section-title">Skills</h2>
+          <ul>
+            <li class="lang-item">HTML</li>
+            <li class="lang-item">CSS</li>
+            <li class="lang-item">JavaScript</li>
+            <li class="lang-item">Grid</li>
+            <li class="lang-item">Flex</li>
+            <li class="lang-item">Figma</li>
+          </ul>
+        </section>
+        <section class="main-section" id="code">
+          <h2 class="section-title">Code</h2>
+          <pre class="pre">
+          function nthFibo(n) {
+            let stack = [0,1] 
+            while (stack.length  n) {
+              stack.push(stack[stack.length - 2] + stack[stack.length - 1])
+            }
+            return stack[n - 1]
+            }
+          </pre>
+        </section>
+        <section class="main-section project-section" id="projects">
+          <h2 class="section-title">Projects</h2>
+          <input type="radio" name="point" id="slide1" checked>
+          <input type="radio" name="point" id="slide2">
+          <input type="radio" name="point" id="slide3">
+          <input type="radio" name="point" id="slide4">
+          <div class="slider">
+            <a href="https://rolling-scopes-school.github.io/vasiliypaikou-JSFEPRESCHOOL/portfolio/"
+              class="slides slide1" target="_blank"><img src="assets/images/1.jpg" alt="portfolio"></a>
+            <a href="https://rolling-scopes-school.github.io/vasiliypaikou-JSFE2022Q1/shelter/pages/main/"
+              class="slides slide2" target="_blank"><img src="assets/images/2.jpg" alt="shelter"></a>
+            <a href="https://rolling-scopes-school.github.io/vasiliypaikou-JSFEPRESCHOOL/tic-tac-toe/"
+              class="slides slide3" target="_blank"><img src="assets/images/3.jpg" alt="tic-tac-toe"></a>
+            <a href="https://rolling-scopes-school.github.io/vasiliypaikou-JSFEPRESCHOOL/random-jokes/"
+              class="slides slide4" target="_blank"><img src="assets/images/4.jpg" alt="random-jokes"></a>
+          </div>
+          <div class="panel">
+            <div class="controls">
+              <label for="slide1" class="lbl">
+                <span class="lbd lbd1"></span>
+              </label>
+              <label for="slide2" class="lbl">
+                <span class="lbd lbd2"></span>
+              </label>
+              <label for="slide3" class="lbl">
+                <span class="lbd lbd3"></span>
+              </label>
+              <label for="slide4" class="lbl">
+                <span class="lbd lbd4"></span>
+              </label>
+            </div>
+          </div>
+        </section>
+        <section class="main-section" id="education">
+          <h2 class="section-title">Education</h2>
+          <p class="p-text">Belarusian-Russian University, engineer</p>
+        </section>
+        <section class="main-section" id="english">
+          <h2 class="section-title">Language</h2>
+          <ul class="lang">
+            <li class="lang-item">English(A1)</li>
+            <li class="lang-item">Belarusian</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer class="footer-container">
+      <div class="container footer-wrapper">
+        <p class="footer-container__paragraph"> © 2022</p>
+        <a href="https://github.com/VasiliyPaikou" target="_blank"
+          class="footer-container__github">VasiliyPaikou</a>
+        <a href="https://rs.school/js/" target="_blank" class="footer-container__logo"></a>
+      </div>
+    </footer>
+  </div>
+
+</body>
+
+</html>

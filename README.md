@@ -1,1 +1,1 @@
-# rsschool-cv
+https://VasiliyPaikou.github.io/rsschool-cv/
